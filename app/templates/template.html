@@ -1,0 +1,26 @@
+<html lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+   <title>Estadistica</title>
+   <link rel="stylesheet" href="{{ url_for('static',     filename='css/template.css') }}">
+ </head>
+ <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">Base de datos</h1>
+        <strong><nav>
+          <ul class="menu">
+            <li><a href="{{ url_for('index') }}">Inicio</a></li>
+            <li><a href="{{ url_for('about') }}">Adidas</a></li>
+			<li><a href="{{ url_for('nike') }}">Nike</a></li>
+			<li><a href="{{ url_for('conclusiones') }}">Conclusiones</a></li>
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+    
+    {% block content %}
+    {% endblock %}
+    
+ </body>
+</html>

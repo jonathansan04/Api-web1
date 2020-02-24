@@ -1,0 +1,56 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Estadistica nike</title>
+  </head>
+  <body>
+     {% extends "template.html" %}
+    {% block content %}
+    <h1> Nike </h1>
+	<p> Resumen estadistico para los tweets de nike.</p>
+    <p>  Acontinuacion vamos a mostrar un resumen estadistico de los 
+	 ultimos 200 tweets que se le han realizado a nike</p>
+	<p>Para la realizacion de el estudio estadistico, primero importamos
+	 200 tweets de la pagina de nike en twitter a estos tweets los almacenamos
+	 en una base de datos de 200 filas por 7 columnas, de estas 7 columnas 
+	 nos fijamos en 2 la de favs y retweets. </p>
+	<p>Realizamos una correlacion lineal conjunto de las variables
+     	de favs y retweets en la que observamos que son muy unidas
+        por ende su valor de favs y retweets es muy similar	{{a1}}</p>
+	<p> Vemos que la media de sus favs es de {{a2}} por tweet</p>
+	<p> Tiene una mediana de {{a3}}</p>
+	<p> Su moda o dato que mayor se repite es {{a4}}</p>
+	<p> Sus favs tiene una desviacion estandar de {{a5}}</p>
+	<p> Tiene una varianza poblacional de {{a6}}</p>
+	<p> Posee una varianza de{{a7}}</p>
+    <p> Ahora analizaremos los retweets </p>
+    <p> Vemos que la media de sus retweets es de {{a11}} por tweet</p>
+	<p> Tiene una mediana de {{a12}}</p>
+	<p> Su moda o dato que mayor se repite es {{a13}}</p>
+	<p> Sus favs tiene una desviacion estandar de {{a14}}</p>
+	<p> Tiene una varianza poblacional de {{a15}}</p>
+	<p> Posee una varianza de {{a16}}</p>
+	
+    <p> Resumen estadistico para los tweets de nike.</p>
+	   <p> Acontinuacion con los datos obtendios realizaremos unas graficas que nos 
+	      ayudaran a analizar de una mejor manera los tweets de nike</p>
+		  <p> Realizamos un histograma de la cantidad de likes en la que podemos
+		  observar la dispercion de likes en cada tweets realizado</p>
+          <img src="static/Figure_n1.png">
+		  <p> Realizamos un histograma de la cantidad de retweets en la que podemos
+		  observar la dispercion de likes en cada tweets realizado</p>
+	 <img src="static/Figure_n2.png">
+	 
+	     <p> Podemos ver con la siguiente grafica como se maneja la cantidad de los likes segun
+		 cada tweet</p>
+		  <p> En esta grafica realizamos la comparacion de los likes y los retweets en una grafica de dispercion</p>
+	 <img src="static/Figure_3.png">
+	   <p> Vemos con la siguiente grafica como varia la cantidad de los likes segun
+		 cada tweet</p>
+	 <img src="static/Figure_n4.png">
+	   <p> Vemos con la siguiente grafica como varia la cantidad de los likes segun
+		 cada tweet</p>
+	 <img src="static/Figure_n5.png">
+   {% endblock%} 
+  </body>
+</html>
